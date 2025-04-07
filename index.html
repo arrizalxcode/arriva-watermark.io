@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arriva Celluler - Upload Testimoni</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f9f9f9, #e0eafc);
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: #fff;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 28px;
+      color: #0077cc;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    input[type="file"] {
+      padding: 10px;
+      border: 2px dashed #0077cc;
+      background-color: #f0f8ff;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    canvas {
+      margin-top: 20px;
+      max-width: 100%;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      input[type="file"] {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ARRIVA CELLULER</h1>
+    <p>Upload testimoni pelanggan dan watermark otomatis akan ditambahkan</p>
+
+    <input type="file" id="upload" accept="image/*">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
